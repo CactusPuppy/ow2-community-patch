@@ -1,3 +1,7 @@
+# Developer Environment
+
+Developers should work in [OverPy](https://github.com/Zezombye/overpy) if possible. Work in [OSTW](https://github.com/ItsDeltin/overwatch-script-to-workshop) will be accepted as long the source code is easily translatable to OverPy (i.e. no methods or use of variable stacks. Use of classes is acceptable but discouraged).
+
 # Developer Guidelines
 
 When developing for this mode, please abide by the following conventions:
