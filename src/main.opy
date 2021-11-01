@@ -56,6 +56,8 @@
 #!include "heroes/mercy/primary-secondary.opy"
 #!include "heroes/mercy/angelic-blessing.opy"
 
+#!include "heroes/moira/fade.opy"
+
 #!include "heroes/orisa/base.opy"
 #!include "heroes/orisa/gallop.opy"
 #!include "heroes/orisa/primary.opy"
