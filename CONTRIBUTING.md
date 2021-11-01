@@ -41,5 +41,8 @@ When developing for this mode, please abide by the following conventions:
 
 - Never use `setMoveSpeed`. Instead, use the player variables `AddSpeedMod`, `MultSpeedMod`, and `HeroAbsoluteSpeedMod`.
   - `AddSpeedMod` is for adding a percentage move speed to a player. This value should only ever be added to or subtracted from.
+    - For example, to add 10% move speed to a player, do `player.AddSpeedMod += 10`.
   - `MultSpeedMod` is for multiplying base speed by a certain factor (e.g. 1.5 for an additional 50% move speed). This value should only ever be multiplied or divided.
+    - For example, to double the move speed of a player, do `player.MultSpeedMod *= 2`.
   - `HeroAbsoluteSpeedMod` is for a speed mod that affects all movements of a hero. It should essentially act as if the base movement speed of the player has been changed to this percentage of their actual base speed. This value should only ever be set directly.
+    - For example, to prevent a hero from moving regardless of other circumstances (e.g. when casting an ability), do `player.HeroAbsoluteSpeedMod = 0`. Note that to undo the previous changes, the value should be set to 100 (e.g. `player.HeroAbsoluteSpeedMod = 100`). One should prefer using `AddSpeedMod` or `MultSpeedMod`, and only use `HeroAbsoluteSpeedMod` when absolutely necessary.
