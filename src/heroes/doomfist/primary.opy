@@ -7,7 +7,7 @@ rule "Primary Damage":
     @Condition eventPlayer.isHoldingButton(Button.PRIMARY_FIRE) == true
     @Condition (not eventPlayer.isMeleeing()) == true
     @Condition (not eventPlayer.isUsingAbility1() and not eventPlayer.isUsingAbility2() and not eventPlayer.isUsingUltimate() and not eventPlayer.isFiringSecondaryFire()) == true
-    @Condition not specialAbilitiesDisabled(eventPlayer)
+    @Condition not hardCCd(eventPlayer)
     @Condition eventPlayer.getAmmo(0) > 0
     @Condition (not eventPlayer.Punching) == true
 
