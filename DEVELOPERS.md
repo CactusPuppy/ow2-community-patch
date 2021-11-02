@@ -2,9 +2,13 @@
 
 Developers should work in [OverPy](https://github.com/Zezombye/overpy) if possible. Work in [OSTW](https://github.com/ItsDeltin/overwatch-script-to-workshop) will be accepted as long the source code is easily translatable to OverPy (i.e. no methods or use of variable stacks. Use of classes is acceptable but discouraged).
 
-# Developer Guidelines
+# (Recommended, but Optional) Semantic Commits
 
-When developing for this mode, please abide by the following conventions:
+To assist code reviewers in parsing your submission, please follow the [Angular Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits). Each commit must cover one and only one cognitive change to the project. Do not mix two instances of changes (e.g. documentation change in `patch-notes.html` and feature change in `src/heroes`) in one commit.
+
+# Coding Rules
+
+When developing for this mode, please abide by the following rules:
 
 - Always use `player.hero` to check a player's effective hero. Never use `@Hero`, `player.getCurrentHero()`, or `getPlayersOnHero()`.
   - The only exception is if you are working on the hero swap code contained in [`src/general/resets.opy`](src/general/resets.opy).
@@ -50,3 +54,7 @@ When developing for this mode, please abide by the following conventions:
     - For example, to double the move speed of a player, do `player.MultSpeedMod *= 2`.
   - `HeroAbsoluteSpeedMod` is for a speed mod that affects all movements of a hero. It should essentially act as if the base movement speed of the player has been changed to this percentage of their actual base speed. This value should only ever be set directly.
     - For example, to prevent a hero from moving regardless of other circumstances (e.g. when casting an ability), do `player.HeroAbsoluteSpeedMod = 0`. Note that to undo the previous changes, the value should be set to 100 (e.g. `player.HeroAbsoluteSpeedMod = 100`). One should prefer using `AddSpeedMod` or `MultSpeedMod`, and only use `HeroAbsoluteSpeedMod` when absolutely necessary.
+
+- Hero-specific code should not be affected by where in [`src/main.opy`](/src/main.opy) it is imported.
+- Prefix all hero-specific variable and subroutine names with the hero name (or callout) (e.g. `brigBashMoveSpeed`).
+- Extract all [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)#Unnamed_numerical_constants) to a macro (e.g. `#!define zenDefaultMaxShieldHP`).
