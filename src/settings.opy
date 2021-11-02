@@ -2,8 +2,8 @@
 
 settings {
     "main": {
-        "description": "Mode Version: v1.0\n\nRecreation of various revealed Overwatch 2 features and community-suggested changes. Developed by Elo Hell Workshops in partnership with the Paris Eternal and SVB.\n\nFull patch notes at workshop.codes/2TEBR.\nBug tracker: github.com/CactusPuppy/svb-ow2/issues\n\nInterested in joining the largest Workshop Discord to get help and share your creations? Join workshop.codes/discord.",
-        "modeName": "Overwatch 2 Community Patch"
+        "description": "Mode Version: v1.1\n\nRecreation of various revealed Overwatch 2 features and community-suggested changes. Developed by Elo Hell Workshops in partnership with the Paris Eternal and SVB.\n\nFull patch notes at workshop.codes/2TEBR.\nBug tracker: github.com/CactusPuppy/svb-ow2/issues\n\nInterested in joining the largest Workshop Discord to get help and share your creations? Join workshop.codes/discord.",
+        "modeName": "OW2 Community Patch (Scrims)"
     },
     "lobby": {
         "spectatorSlots": 6,
