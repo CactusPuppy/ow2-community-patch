@@ -21,7 +21,7 @@ rule "Moira using Fade - Clear debuffs from allies":
         eventPlayer.FadePlayerInRange.clearStatusEffect(Status.HACKED)
         eventPlayer.FadePlayerInRange.clearStatusEffect(Status.BURNING)
         eventPlayer.FadePlayerInRange.clearStatusEffect(Status.KNOCKED_DOWN)
-        eventPlayer.FadePlayerInRange.clearStatusEffect(Status.ASLEEP)
+        # eventPlayer.FadePlayerInRange.clearStatusEffect(Status.ASLEEP)
         eventPlayer.FadePlayerInRange.clearStatusEffect(Status.ROOTED)
         eventPlayer.FadePlayerInRange.clearStatusEffect(Status.STUNNED)
         playEffect(getAllPlayers(), DynamicEffect.GOOD_PICKUP_EFFECT, Color.VIOLET, eventPlayer.FadePlayerInRange, 1.5)
