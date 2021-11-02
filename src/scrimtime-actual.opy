@@ -71,7 +71,7 @@ rule "Settings: Ready Up Options":
     Scrim_AllowForceTeamReady = createWorkshopSetting(bool, "Ready Up System", "Allow Players to Force Team Ready", false, 2)
     Scrim_ForceTeamReadyHoldTime = createWorkshopSetting(int[1:5], "Ready Up System", "Force Team Ready Button Hold Time", 3, 3)
     Scrim_SetupCountdownTime = createWorkshopSetting(int[5:10], "Ready Up System", "Countdown Timer", 5, 4)
-    Scrim_MinimumPlayersToStart = createWorkshopSetting(int[1:12], "Ready Up System", "Minimum Number of Players in Game", 12, 5)
+    Scrim_MinimumPlayersToStart = createWorkshopSetting(int[1:12], "Ready Up System", "Minimum Number of Players in Game", 10, 5)
     Scrim_FreezeSetupTime = createWorkshopSetting(bool, "Ready Up System", "Freeze Setup Timer", false, 6)
     Scrim_EnableReadyVoiceLine = createWorkshopSetting(bool, "Ready Up System", "Play Voice Line When Readying", true, 7)
 
