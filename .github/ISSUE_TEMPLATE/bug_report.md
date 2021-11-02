@@ -24,8 +24,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Lobby Information**
-Overwatch Retail Patch (e.g. 1.51): \<REPLACE>
-Mode Version* (e.g. 1.0): \<REPLACE>
+Overwatch Retail Patch (e.g. 1.51): \<REPLACE>  
+Mode Version* (e.g. v1.0): \<REPLACE>
 
 *\*Mode Version can be found in the mode description.*
 
