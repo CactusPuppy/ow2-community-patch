@@ -4,6 +4,7 @@
 globalvar orisaGallopDuration = createWorkshopSetting(float[0.1:2], "Orisa", "Time gallop duration", 0.5, 0)
 globalvar orisaGallopDelay = createWorkshopSetting(float[0:2], "Orisa", "Gallop cast time", 0.1, 1)
 globalvar orisaGallopDamage = createWorkshopSetting(int[0:200], "Orisa", "Time gallop damage dealt", 75, 2)
+globalvar orisaGallopCooldown = createWorkshopSetting(float[1:20], "Orisa", "Time gallop cooldown", 10, 0)
 
 
 rule "[orisa.del] Gallop":
@@ -31,7 +32,7 @@ rule "[orisa.del] Gallop":
     eventPlayer.disallowButton(Button.ULTIMATE)
     #Start transition to third person camera
     eventPlayer.startCamera(eventPlayer.getEyePosition(), eventPlayer.getEyePosition() + eventPlayer.getFacingDirection(), 30)
-    wait()
+    wait(0.048)
     eventPlayer.startCamera(raycast(worldVector(vect(0, 0, 0), eventPlayer, Transform.ROTATION_AND_TRANSLATION), worldVector(vect(0, 3, -2), eventPlayer, Transform.ROTATION_AND_TRANSLATION), getAllPlayers(), eventPlayer, true).getHitPosition(), worldVector(vect(0, 3, 0), eventPlayer, Transform.ROTATION_AND_TRANSLATION), 30)
     #Create effects
     createEffect(getPlayers(eventPlayer.getTeam()), Effect.GOOD_AURA, Color.LIME_GREEN, updateEveryTick(eventPlayer.getEyePosition()), 0.5, EffectReeval.VISIBILITY_POSITION_AND_RADIUS)
@@ -81,7 +82,7 @@ rule "[orisa.del] Gallop":
     wait(0.25)
     eventPlayer.stopCamera()
     #Set cooldown / restore movement
-    eventPlayer.setAbilityCooldown(Button.ABILITY_2, 10)
+    eventPlayer.setAbilityCooldown(Button.ABILITY_2, orisaGallopCooldown)
     eventPlayer.HeroAbsoluteSpeedMod = 100
     eventPlayer.stopFacing()
     #Re-enable
