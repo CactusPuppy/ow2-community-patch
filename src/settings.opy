@@ -2,7 +2,7 @@
 
 settings {
     "main": {
-        "description": "Mode Version: v1.0\nRecreation of various revealed Overwatch 2 features and community-suggested changes. Developed by Elo Hell Workshops in partnership with the Paris Eternal and SVB.\n\nFull patch notes at workshop.codes/2TEBR. Bug tracker: github.com/CactusPuppy/svb-ow2/issues\n\nInterested in joining the largest Workshop Discord to get help and share your creations? Join workshop.codes/discord.",
+        "description": "Mode Version: v1.0\n\nRecreation of various revealed Overwatch 2 features and community-suggested changes. Developed by Elo Hell Workshops in partnership with the Paris Eternal and SVB.\n\nFull patch notes at workshop.codes/2TEBR.\nBug tracker: github.com/CactusPuppy/svb-ow2/issues\n\nInterested in joining the largest Workshop Discord to get help and share your creations? Join workshop.codes/discord.",
         "modeName": "Overwatch 2 Community Patch"
     },
     "lobby": {
