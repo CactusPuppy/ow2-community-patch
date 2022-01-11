@@ -6,7 +6,7 @@ With the next season of Overwatch League being played in an early build of Overw
 
 The original project was created with the help of notable community figures, such as EeveeA and Bogur, working alongside over eight Workshop developers. Several of those developers returned to continue updating the project into what you see today!
 
-**Full credits and patch notes can be seen at [workshop.codes/paris-ow2](https://workshop.codes/2TEBR)**
+**Full credits and patch notes can be seen at [workshop.codes/overwatch2](https://workshop.codes/2TEBR)**
 
 ## Compiling from source
 
