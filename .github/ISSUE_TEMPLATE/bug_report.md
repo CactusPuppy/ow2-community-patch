@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-**Submission Checklist**
-- [ ] I have verified that my bug has not already been reported ([list of tracked bugs](https://github.com/CactusPuppy/svb-ow2/issues?q=is%3Aissue+is%3Aopen+label%3Abug))
-- [ ] I have checked that I am using the latest version of the import code
+<!-- **Submission Checklist**
+- ✔️ I have verified that my bug has not already been reported ([list of tracked bugs](https://github.com/CactusPuppy/svb-ow2/issues?q=is%3Aissue+is%3Aopen+label%3Abug))
+- ✔️ I have checked that I am using the latest version of the import code -->
 
 **Describe the bug**  
 A clear and concise description of what the bug is.
