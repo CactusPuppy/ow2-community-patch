@@ -1,3 +1,5 @@
+## With the upcoming release of Overwatch 2 to the public, this repository no longer serves any purpose besides a historical archive. As such, it has been archived.
+
 # Overwatch 2 Community Patch [OWL Edition]
 
 [![](https://i.imgur.com/ar0n5UV.jpeg)](https://workshop.codes/2TEBR)
